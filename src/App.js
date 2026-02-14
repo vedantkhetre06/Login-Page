@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import Quiz from "./component/Quiz"
+import { Navigate } from 'react-router-dom';
 // import count from "./count";
+
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes,Route, useNavigate} from "react-router-dom";
 // ============= function =================
@@ -10,7 +13,7 @@ function SignLogin() {
   const navigate = useNavigate();
 
   // ---------- Login ---------------
-  const handleLogin = (e)=>{
+const handleLogin = (e)=>{
     e.preventDefault();
 
     const email = e.target.email.value;
@@ -30,6 +33,8 @@ function SignLogin() {
       setError("Invalid email or password");
     }
   };
+
+
   // ------ Sign UP ----------------
   const handleSingup = (e) => {
     e.preventDefault();
@@ -100,19 +105,36 @@ function SignLogin() {
 }
 
 function Account(){
+  const navigate = useNavigate();
+   const startQuiz = () => {
+    navigate("/quiz");
+  };
   return(
-    <p>Welcome to your account page</p>
+    <div className="go-to-quiz">
+    <div className="quiz-box">
+      <h1>Welcome to your Starting page of Quiz</h1>
+      <h3>press Start Button to Start the Quiz</h3>
+
+      <button type="submit" onClick={startQuiz}>
+      Start Quiz
+      </button>
+    </div>
+    </div>
+
   );
 }
 
 function App(){
+ 
   return(
     <Router>
       <Routes>
         <Route path='/' element={<SignLogin/>}/>
         <Route path="/account" element={<Account />} />
+        <Route path="/quiz" element={<Quiz />} /> 
       </Routes>
     </Router>
+   
   );
 }
 export default App;

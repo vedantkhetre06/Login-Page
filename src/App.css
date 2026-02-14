@@ -170,6 +170,22 @@ button[type="submit"]:active {
 .new-account a:hover {
   text-decoration: underline;
 }
+/* quiz handler */
+.go-to-quiz {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.quiz-box {
+  display: flex;
+  flex-direction: column; /* 🔥 forces below each other */
+  align-items: center;
+  gap: 15px;              /* space between text & button */
+  text-align: center;
+}
+
+
 
 /* ===== MOBILE ===== */
 @media (max-width: 420px) {

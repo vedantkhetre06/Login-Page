@@ -1,0 +1,46 @@
+
+
+.App {
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    color: #0b0c0c;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  li {
+    font-size: 17px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #f4f4f4;
+    width: 100%;
+  }
+  
+  li:hover {
+    background-color: #2eac7e;
+  }
+  
+  .selected {
+    background-color: #0de025;
+  }
+  
+  .button{
+    background-color: #0dbc72;
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+  }
+  .button-disable{
+    border-radius: 20px;
+    width: 100%;
+    cursor: not-allowed;
+  }
+  
