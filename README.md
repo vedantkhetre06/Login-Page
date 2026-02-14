@@ -36,49 +36,15 @@ src/
  └── index.js
 ```
 
----
 
-## ⚙️ Installation & Setup
+## ⚙️ How It Works
 
-### 1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-```
-
-### 2️⃣ Navigate to project
-
-```bash
-cd YOUR-REPO-NAME
-```
-
-### 3️⃣ Install dependencies
-
-```bash
-npm install
-```
-
-### 4️⃣ Start development server
-
-```bash
-npm start
-```
-
-App will run on:
-
-```
-http://localhost:3000
-```
-
----
-
-## 🔑 How It Works
-
-1. User creates an account (stored in LocalStorage)
-2. User logs in with credentials
-3. Redirects to Account page
-4. Click **Start Quiz**
-5. Navigates to Quiz component
+User creates an account using Sign Up
+User logs in with registered credentials
+After login, user reaches the Account page
+User clicks Start Quiz
+Quiz runs and calculates the score
+Final score is displayed to the user
 
 ---
 
