@@ -39,12 +39,12 @@ src/
 
 ## ⚙️ How It Works
 
-User creates an account using Sign Up
-User logs in with registered credentials
-After login, user reaches the Account page
-User clicks Start Quiz
-Quiz runs and calculates the score
-Final score is displayed to the user
+* User creates an account using Sign Up
+* User logs in with registered credentials
+* After login, user reaches the Account page
+* User clicks Start Quiz
+* Quiz runs and calculates the score
+* Final score is displayed to the user
 
 ---
 
